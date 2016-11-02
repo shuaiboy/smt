@@ -1,4 +1,4 @@
-import React, { Component } from react;
+import React, { Component } from 'react';
 
 //生产计划
 export default class ProductionPlan extends Component {
