@@ -15,26 +15,5 @@ export default class ProductionList extends Component {
 }
 
 ProductionList.defaultProps = {
-	buttonList: [{
-		styles: {
-			color: '#FED875'
-		},
-		imgSrc: 'images/buxiafeederjianliao.png',
-		className: 'componentFeederZonePickingList',
-		name: '不下feeder发料1'
-	}, {
-		styles: {
-			color: '#FED875'
-		},
-		imgSrc: 'images/buxiafeederjianliao.png',
-		className: 'componentFeederZonePickingList',
-		name: '不下feeder发料2'
-	}, {
-		styles: {
-			color: '#FED875'
-		},
-		imgSrc: 'images/buxiafeederjianliao.png',
-		className: 'componentFeederZonePickingList',
-		name: '不下feeder发料3'
-	}]
+	buttonList: []
 }

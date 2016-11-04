@@ -5,7 +5,7 @@ export default class Bread extends Component {
 	render() {
 		let menuHtml = this.props.menuList.map((item, i) => {
 			return <div key={'menu-'+i} className="menuItem">
-					<Link to={item.to}><img title={item.to} src={item.src} /></Link>
+					<Link to={item.to}><img title={item.title} src={item.src} /></Link>
 				</div>;
 		});
 		return (
@@ -13,8 +13,8 @@ export default class Bread extends Component {
 				{menuHtml}
 			</div>
 		);
-	};
-};
+	}
+}
 
 Bread.defaultProps = {
 	menuList: [{

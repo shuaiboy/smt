@@ -1,13 +1,18 @@
 import React, { Component } from 'react';
+import { Link } from 'react-router';
 
 export default class ProductionListButton extends Component {
 	render() {
 		return (
 			<div className={'module ' + this.props.className}>
-				<span className="compBSImg">
-					<img src={this.props.imgSrc} />
-				</span>
-				<span className="compBSSpan" style={this.props.styles}>{this.props.children || this.props.name}</span>
+				<Link to={this.props.className}>
+					<span className="compBSImg">
+						<img src={this.props.imgSrc} />
+					</span>
+					<span className = "compBSSpan" style = { this.props.styles } >
+						{ this.props.children || this.props.name }
+					</span>
+				</Link>
 			</div>
 		);
 	};
