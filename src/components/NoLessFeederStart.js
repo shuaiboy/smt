@@ -39,11 +39,11 @@ export default class NoLessFeederStart extends Component {
 					</span>
 					<span>
 						<label htmlFor="">线别:</label>
-						<input type="text"/>
+						<CInput name="name" id="id" value="value" handleChange={this.InputHandleChange} />
 					</span>
 					<span>
 						<label htmlFor="">机种:</label>
-						<input type="text"/>
+						<CInput name="name" id="id" value="value" handleChange={this.InputHandleChange} />
 					</span>
 				</form>
 				

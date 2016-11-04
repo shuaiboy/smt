@@ -4,6 +4,8 @@ import Button from './common/Button';
 import createHistory from 'history/lib/createHashHistory';
 const history = createHistory();
 
+import { changeBread } from '../actions/actions';
+
 export default class FeederZonePickingList extends Component {
 	handleClick() {
 		history.push({
@@ -12,6 +14,10 @@ export default class FeederZonePickingList extends Component {
 	}
 
 	render() {
+		console.log(354);
+		console.log(changeBread);
+
+
 		let theads = [{
 			key: 'id',
 			value: 'id'
