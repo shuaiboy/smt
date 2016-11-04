@@ -1,8 +1,13 @@
 import React, { Component } from 'react';
 import TableList from './common/TableList';
 import Button from './common/Button';
+import CInput from './common/Input';
 
 export default class NoLessFeederStart extends Component {
+	InputHandleChange() {
+
+	}
+
 	render() {
 		let theads = [{
 			key: 'id',
@@ -30,7 +35,7 @@ export default class NoLessFeederStart extends Component {
 					</span>
 					<span>
 						<label htmlFor="">工单号:</label>
-						<input type="text"/>
+						<CInput name="name" id="id" value="value" handleChange={this.InputHandleChange} />
 					</span>
 					<span>
 						<label htmlFor="">线别:</label>

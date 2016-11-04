@@ -6,7 +6,6 @@ const history = createHistory();
 
 export default class FeederZonePickingList extends Component {
 	handleClick() {
-		console.log(history.getCurrentLocation());
 		history.push({
 			pathname: 'NoLessFeederStart'
 		});
