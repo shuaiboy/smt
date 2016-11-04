@@ -1,19 +1,18 @@
 import React from 'react';
 import Header from './Header';
-import Menu from './Menu';
+import LeftNav from './LeftNav';
 import Bread from './Bread';
 
 require('styles/smt.css');
 
 export default class AppComponent extends React.Component {
 	render() {
-		console.log('asdfsadf', this.props);
 		return (
 			<div className="index">
 				<Header />
 				<div className="containers">
-					<Menu />
-					<div>
+					<LeftNav />
+					<div className="content">
 						<Bread />
 						<div className="component">
 							{ this.props.children }

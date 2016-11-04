@@ -105,42 +105,6 @@ body {
 	transform: rotate(-45deg);
 	-webkit-transform:rotate(-45deg);
 }
-/*table */
-.tableG {
-	border-spacing:0;
-	border-collapse:collapse;
-	border-spacing:2px;
-	border-color:gray;
-	width:100%;
-	border-bottom:1px solid #999;
-}
-.tableG tr {
-	width:100%;
-	color:#666;
-	height:30px;
-	vertical-align:top ;
-}
-.tableG td,.tableG th {
-	vertical-align:top;
-	text-align:center;
-	border:1px solid #999 ;
-	padding:5px;
-}
-.tableG tr.middle {
-	vertical-align:middle ;
-}
-.tableG tr.middle td,.table tr.middle th {
-	vertical-align: middle;
-}
-.tableG .n-l {
-	text-align: left;
-}
-.tableG .n-r {
-	text-align: right;
-}
-.tableG .n-c {
-	text-align: center;
-}
 .button {
 	background: -webkit-linear-gradient(#00adef, #0087dc);
 	border: 1px solid #00adef;
@@ -376,12 +340,18 @@ body {
 	border:4px solid #0087dc;
 	background-color: #EDEEF2;
 }
+
+.content{
+	width:90%;
+	box-sizing: border-box;
+	padding:0 5px;
+	overflow: hidden;
+}
+
 /**container component**/
-	.bread {
-	float: right;
-	width:89.8%;
-	height: 30px;
-	margin-left: 1px;
+.bread {
+	height: 35px;
+	overflow: hidden;
 	border-bottom:1px solid #ACACAC;
 	background: -webkit-linear-gradient(#EDEEF2, #EDEEF6);
 	position: relative;
@@ -404,10 +374,8 @@ body {
 	top:5px;
 }
 .component {
-	float: left;
-	width:89.6%;
-	height: 700px;
-	margin-left: 0px;
+	padding-top:5px;
+	box-sizing: border-box;
 }
 .compGB {
 	width:100%
@@ -530,34 +498,7 @@ body {
 	font-weight: 500;
 }
 /**table样式**/
-	.beginTable {
-	margin:0 auto;
-	width:99%;
-}
-.table {
-	border-spacing:0;
-	border-collapse:collapse;
-	border-spacing:2px;
-	border-color:gray;
-	width:100%;
-	border-bottom:1px solid #acacac;
-}
-.table tr {
-	width:100%;
-	color:#ACACAC;
-	height:30px;
-	vertical-align:top
-}
-.table td,.table th {
-	vertical-align:top;
-	text-align:center;
-	border:1px solid #DADADA
-}
-.tableHeader {
-	width:100%;
-	min-height:80px;
-	border:1px solid #FFFFFF
-}
+
 .picklist div {
 	background-color: #FFFFFF;
 	box-shadow: 2px 3px 2px #9C9C9C;
@@ -569,9 +510,7 @@ body {
 	min-height: 160px;
 	border: 1px solid #EDEEF2;
 }
-.tableTool tr td span {
-	margin:5px auto
-}
+
 .spans {
 	display:block;
 	text-align:center;
