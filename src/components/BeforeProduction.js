@@ -1,6 +1,9 @@
 import React, { Component } from 'react';
 import ProductionList from './common/ProductionList';
 
+import { changeBread } from '../actions/actions';
+
+
 export default class BeforeProduction extends Component {
 	render() {
 		let buttonList = [{

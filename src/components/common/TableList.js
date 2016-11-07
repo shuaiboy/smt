@@ -26,7 +26,6 @@ export default class TableList extends Component {
 			);
 		});
 
-		console.log(tbodyArr);
 		return (
 			<table className="table table-bordered">
 				<thead>

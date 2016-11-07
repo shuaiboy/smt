@@ -6,14 +6,20 @@ import Bread from './Bread';
 require('styles/smt.css');
 
 export default class AppComponent extends React.Component {
+	componentDidMount() {
+		const { store } = this.context;
+	}
+
 	render() {
+		const { store } = this.context;
+
 		return (
 			<div className="index">
 				<Header />
 				<div className="containers">
 					<LeftNav />
 					<div className="content">
-						<Bread />
+						<Bread changeBread = {store.getState().changeBread} />
 						<div className="component">
 							{ this.props.children }
 					    </div>
@@ -22,6 +28,10 @@ export default class AppComponent extends React.Component {
 			</div>
 		);
 	}
+}
+
+AppComponent.contextTypes = {
+	store: React.PropTypes.object
 }
 
 AppComponent.defaultProps = {};

@@ -14,10 +14,6 @@ export default class FeederZonePickingList extends Component {
 	}
 
 	render() {
-		console.log(354);
-		console.log(changeBread);
-
-
 		let theads = [{
 			key: 'id',
 			value: 'id'

@@ -1,7 +1,4 @@
-import { createAction } from 'redux-action';
-import {
-	CHANGE_BREAD
-} from './actionTypes';
+import { createAction } from 'redux-actions';
+import { CHANGE_BREAD } from './actionTypes';
 
-console.log('asdf', CHANGE_BREAD);
 export const changeBread = createAction(CHANGE_BREAD);
