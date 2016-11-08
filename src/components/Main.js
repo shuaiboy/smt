@@ -12,7 +12,6 @@ export default class AppComponent extends React.Component {
 
 	render() {
 		const { store } = this.context;
-
 		return (
 			<div className="index">
 				<Header />

@@ -3,7 +3,7 @@ import { Link } from 'react-router';
 
 export default class ProductionListButton extends Component {
 	handleClick(e) {
-		console.log(e.target);
+		//console.log(e.target);
 	}
 
 	render() {

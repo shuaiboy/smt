@@ -4,6 +4,7 @@ import ProductionListButton from './ProductionListButton';
 export default class ProductionList extends Component {
 	componentWillMount() {
 		const { store } = this.context;
+
 	}
 	render() {
 		let buttons = this.props.buttonList.map((item, i) => {
